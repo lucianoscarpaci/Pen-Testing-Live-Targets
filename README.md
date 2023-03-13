@@ -51,11 +51,19 @@ When the administrator logs in, and visits the feedback page, they are attacked 
 
 ## Red
 
-Vulnerability #1: __________________
+Vulnerability #1: Insecure Direct Object Reference (IDOR)
+
+Description:
+This link ```/red/public/salesperson.php?id=``` is vulnerable to Insecure Direct Object Reference.
+The hacker uses the burp suite tool to find the hidden users. Inside burp suite, the hacker loads a scope of the red websites IP address, and sets a numbers payload in sequential order from 1 to 12 with a step of 1. When the attack starts, status code 200 indicates that a salesperson has been found. A status code 302 means that there is no salesperson found. In total there is 11 salesperson found by the attack. The attack exposes two new salesperson found by the attack.
+
+<img src="./redexploit1.gif">
+
+Vulnerability #2: __________________
 
 Description:
 
-<img src="red-vuln1.gif">
+<img src="red-vuln2.gif">
 
 
 ## Notes
