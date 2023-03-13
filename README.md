@@ -41,6 +41,13 @@ When a hacker enters a correct username, they inspect the element of the usernam
 
 <img src="./greenexploit1.gif">
 
+Vulnerability #2: Cross-Site Scripting (XSS)
+
+Description:
+The hacker takes advantage of a cross-site scripting vulnerablility in the contact form.
+When the administrator logs in, and visits the feedback page, they are attacked by a cross-site script.
+
+<img src="./greenexploit2.gif">
 
 ## Red
 
