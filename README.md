@@ -34,11 +34,12 @@ Description: The victim Logs in to the website as the administrator, The hacker 
 
 ## Green
 
-Vulnerability #1: __________________
+Vulnerability #1: Username Enumeration
 
 Description:
+When a hacker enters a correct username, they inspect the element of the username and find the ```class=failure``` element. If the username does not exist in the website, then the inspect of the username will return ```class=failed```. For example, the pperson username exists in the website but the ppersons username does not exist.
 
-<img src="green-vuln1.gif">
+<img src="./greenexploit1.gif">
 
 
 ## Red
