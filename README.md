@@ -25,6 +25,12 @@ Robert Hamilton ```/public/salesperson.php?id=4``` and injects this specific SQL
 
 <img src="./blueexploit1.gif">
 
+Vulnerability #2: Session Hijacking/Fixation
+
+Description: The victim Logs in to the website as the administrator, The hacker captures the administrator's session ID and logins into the administrator's account with the stolen session ID.
+
+<img src="./blueexploit2.gif">
+
 
 ## Green
 
