@@ -17,9 +17,11 @@ Each color is vulnerable to only 2 of the 6 possible exploits. First discover wh
 
 ## Blue
 
-Vulnerability #1: __________________
+Vulnerability #1: SQL Injecion (SQLi)
 
-Description:
+Description: The hacker visits the sales person 
+Robert Hamilton ```/public/salesperson.php?id=4``` and injects this specific SQL into the URL
+```/public/salesperson.php?id=%27or%201=1--%27``` The URL returns the sales person Daron Burke.
 
 <img src="blue-vuln1.gif">
 
