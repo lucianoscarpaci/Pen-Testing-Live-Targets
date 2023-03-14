@@ -64,7 +64,7 @@ Vulnerability #2: Cross-Site Request Forgery (CSRF)
 Description:
 This site is not configured correctly for CSRF protection. A hacker can submit a hidden form
 in the feedback page that alters the salesperson's information. When the site is configured propertly, this action is only for the administrator. In my demostration video, I show how to change information of Elizabeth Olson to Elizabeth Suzuki. When the Administrator follows the link, they submit the bad form. 
-``
+```
 <html>
   <body onload="document.hiddenForm.submit()">
     <form name="hiddenForm" style="display:none" action="https://35.184.88.145/red/public/staff/salespeople/edit.php?id=6" target="target" method="post">
